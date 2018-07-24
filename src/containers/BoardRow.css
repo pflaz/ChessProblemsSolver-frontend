@@ -1,0 +1,24 @@
+.row {
+    width: 100%;
+}
+
+.rowNumberSquare {
+    float: left;
+    width: 4%;
+ 
+    position: relative;
+    padding-top: 12%;
+    overflow: hidden;
+}
+
+.rowNumberContent {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}

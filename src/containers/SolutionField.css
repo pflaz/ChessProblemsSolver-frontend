@@ -1,0 +1,7 @@
+.field {
+	border: 1px silver;
+	border-color: #c2a86e;
+	border-style: solid;
+	height: 100%;
+	padding: 10px;
+}

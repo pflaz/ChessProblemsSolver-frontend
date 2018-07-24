@@ -1,0 +1,22 @@
+.button {
+    color: #ffffff;
+    background-color: #967328;
+    border-color: #c2a86e;
+    width: 200px;
+    height: 30px;
+    border: 1px solid silver;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 1px 6px;
+}
+
+.button:hover:enabled {
+    background-color: #ffffff;
+    border-color: #c2a86e;
+    color: #967328;
+}
+
+.button:disabled {
+    background-color: #C2A86E;
+}

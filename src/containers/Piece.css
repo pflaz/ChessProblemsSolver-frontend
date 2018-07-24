@@ -1,0 +1,12 @@
+.colorWhite, .colorBlack {
+    font-size: 300%;
+}
+
+
+.colorWhite {
+    color: #FFF9EB;
+}
+
+.colorBlack {
+    color: #000000;
+}

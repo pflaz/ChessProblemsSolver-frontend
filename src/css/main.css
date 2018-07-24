@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
+.color-primary-0 { color: #EFDEB9 }
+.color-primary-1 { color: #FFFFFF }
+.color-primary-2 { color: #FFF9EB }
+.color-primary-3 { color: #C2A86E }
+.color-primary-4 { color: #967328 }
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
