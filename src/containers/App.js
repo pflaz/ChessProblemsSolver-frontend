@@ -77,7 +77,7 @@ class App extends React.Component {
 	handleSolveClick = (event) => {
 		this.setState({isGettingSolutionInProcess: true}, function() {
 			const fen=this.state.fen;
-			const url="http://api.chesspuzzles.eu/v1/solution/getSolution?fen=" + fen + "&inMoves=" + this.state.inMoves;
+			const url="http://api.chessproblems.eu/v1/solution/getSolution?fen=" + fen + "&inMoves=" + this.state.inMoves;
 	
 			let solutions;
 	
