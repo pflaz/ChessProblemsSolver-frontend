@@ -28,7 +28,7 @@ class SolutionField extends React.Component {
 			<li>At any time you can get the new chess problem and choose the number of moves to the checkmate (<strong>Random</strong> button).
 		</ol>
 		<br>
-		Feel free to contact us: <a href="mailto:chesspuzzles@chesspuzzles.eu">chesspuzzles@chesspuzzles.eu</a><br>
+		Feel free to contact us: <a href="mailto:chessproblems@chessproblems.eu">chessproblems@chessproblems.eu</a><br>
 		<br>
 		Have a nice solving! :)`;
 
