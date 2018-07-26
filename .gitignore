@@ -1,3 +1,4 @@
 node_modules/
 work/
 src/containers/!BLANK.js
+build/
