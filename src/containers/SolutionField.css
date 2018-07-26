@@ -1,7 +1,15 @@
 .field {
+	margin: 4px;
 	border: 1px silver;
 	border-color: #c2a86e;
 	border-style: solid;
-	height: 100%;
-	padding: 10px;
+	height: 658px;
+	padding: 20px;
+	overflow: auto;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #967328;
 }

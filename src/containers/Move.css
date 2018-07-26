@@ -1,3 +1,8 @@
 .move {
     cursor: pointer;
 }
+
+.highlighted {
+    color: #EFDEB9;
+    background-color:#967328;
+}

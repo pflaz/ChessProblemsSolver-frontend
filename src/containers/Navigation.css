@@ -1,0 +1,17 @@
+.navigation {
+    font-size: 80%;
+}
+
+.search-field {
+    text-align: center;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 5px;
+}
+
+.new-position-field {
+    text-align: center;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 5px;
+}

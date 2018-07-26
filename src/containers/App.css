@@ -9,6 +9,7 @@ body {
 .MainAppContainer {
 	width: 100%;
 	max-width: 1200px;
+	max-height: 100vh;
 	margin: 0 auto;
 	background-color: #EFDEB9;
 	color: #967328;

@@ -7,6 +7,8 @@ class Solution extends React.Component {
 		super(props);
 		//solutionNumber
 		//moveWithBoard
+		//onMoveClick
+		//highlightMove
 	}
 
 	render() {
@@ -17,11 +19,24 @@ class Solution extends React.Component {
 				</div>
 				<div>
 					<Move 
-						number="" 
+						id={this.props.solutionNumber}
+						moveName=""
+						longNotation="Start position"
+						fen={this.props.fenStart} 
+						nextMoves={null}
+						onClick={this.props.onMoveClick}
+						highlightMove={this.props.highlightMove}
+						nestLevel={0}
+					/>
+					<Move 
+						id={this.props.solutionNumber + '_' + this.props.moveWithBoard.moveName}
+						moveName={this.props.moveWithBoard.moveName}
 						longNotation={this.props.moveWithBoard.longNotation} 
 						fen={this.props.moveWithBoard.fen} 
 						nextMoves={this.props.moveWithBoard.nextMoves}
 						onClick={this.props.onMoveClick}
+						highlightMove={this.props.highlightMove}
+						nestLevel={1}
 					/>
 				</div>
 			</div>
