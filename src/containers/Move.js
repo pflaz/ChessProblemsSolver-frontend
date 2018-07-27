@@ -54,7 +54,7 @@ class Move extends React.Component {
 	}
 
 	getMoveNumber() {
-		if (this.props.moveName == "") {
+		if (this.props.moveName == "" || !this.props.fen) {
 			return "";
 		}
 		let result;

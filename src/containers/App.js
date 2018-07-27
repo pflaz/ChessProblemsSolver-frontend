@@ -19,7 +19,8 @@ class App extends React.Component {
 			inMoves: 2,
 			newPositionInMovesValue: 2,
 			isGettingSolutionInProcess: false,
-			solutions: false
+			solutions: false,
+			error: false
 		}
 	}
 
@@ -67,6 +68,8 @@ class App extends React.Component {
 							onMoveClick={this.handleMoveClick}
 							highlightMove={this.state.highlightMove}
 							fenStart={this.state.startFen}
+							error={this.state.error}
+							onSetErrorStatus={this.handleSetErrorStatus}
 						/>
 					</div>
 				</div>
@@ -82,20 +85,30 @@ class App extends React.Component {
 			let solutions;
 	
 			fetch(url)
+				.then(response => {
+					if (response.ok) {
+						return response;
+					} else {
+						throw Error(`Error`);
+					}
+				})
 				.then(response => response.json())
 				.then(responseJson => solutions = responseJson)
 				.then(() => {
 					this.setState({
+						error: false,
 						solutions: solutions,
 						isGettingSolutionInProcess: false
 					});
 				})
 				.catch(() => {
+					console.log('catch');
 					this.setState({
-						solutions: "Cannot connect to the solving system.",
+						solutions: false,
+						error: "There is no answer from solving system.",
 						isGettingSolutionInProcess: false
 					});
-				})
+				});
 		});
 	}
 

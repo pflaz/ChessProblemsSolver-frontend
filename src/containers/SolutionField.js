@@ -8,6 +8,7 @@ class SolutionField extends React.Component {
 		super(props);
 		//solutions (array)
 		//highlightMove
+		//error
 	}
 
 
@@ -36,6 +37,12 @@ class SolutionField extends React.Component {
 	}
 
 	getSolutions() {
+
+		if (this.props.error) {
+			console.log(this.props.error);
+			return 'There is too much time needed to solve this problem. Please choose the other position.'
+		}
+
 		if (this.props.solutions === false) {
 			return <div dangerouslySetInnerHTML={this.getWelcomeText()} />;
 		}
