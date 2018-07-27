@@ -102,7 +102,6 @@ class App extends React.Component {
 					});
 				})
 				.catch(() => {
-					console.log('catch');
 					this.setState({
 						solutions: false,
 						error: "There is no answer from solving system.",
@@ -173,8 +172,8 @@ class App extends React.Component {
 
 		positions[3] = [];
 		positions[3].push({
-			fen: "B1n3Q1/k7/8/8/8/8/K6B/8 w - - 0 1",
-			author: "Cenek KAINER (1922)",
+			fen: "8/5k2/8/2R3K1/8/8/R7/8 w - - 0 1",
+			author: "",
 			movesNumber: 3,
 			solutionsNumber: 1
 		});
